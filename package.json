@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev:frontend": "cd frontend && yarn && yarn dev",
+    "dev:backend": "cd backend && yarn && yarn start:dev"
+  },
+  "dependencies": {
+    "@nestjs/cli": "^9.2.0"
+  }
+}
