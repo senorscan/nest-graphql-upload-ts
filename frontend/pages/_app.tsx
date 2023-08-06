@@ -5,6 +5,9 @@ import { createUploadLink } from 'apollo-upload-client'
 
 const httpLink = createUploadLink({
   uri: 'http://127.0.0.1:8080/graphql',
+  headers: {
+    'apollo-require-preflight': 'true',
+  },
 }) as unknown as ApolloLink
 
 const client = new ApolloClient({
